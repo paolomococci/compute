@@ -8,8 +8,8 @@
         tools:context=".MainActivity">
 
     <EditText
-            android:id="@+id/operand_one_edit_text"
-            android:hint="@+id/operand_one_edit_text"
+            android:id="@+id/operand_one"
+            android:hint="@+id/operand_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -25,8 +25,8 @@
             app:layout_constraintTop_toTopOf="parent"/>
 
     <EditText
-            android:id="@+id/operand_two_edit_text"
-            android:hint="@+id/operand_two_edit_text"
+            android:id="@+id/operand_two"
+            android:hint="@+id/operand_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -39,7 +39,7 @@
             android:text="@string/type_operand_two_hint"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/operand_one_edit_text"/>
+            app:layout_constraintTop_toBottomOf="@+id/operand_one"/>
 
     <Button
             android:id="@+id/button_add"
@@ -53,7 +53,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.2"/>
+            app:layout_constraintVertical_bias="0.33"/>
 
     <Button
             android:id="@+id/button_sub"
@@ -89,10 +89,10 @@
             app:layout_constraintStart_toEndOf="@+id/button_div" />
 
     <TextView
-            android:id="@+id/operation_result_text_view"
+            android:id="@+id/operation_result"
             android:layout_width="280dp"
             android:layout_height="60dp"
-            android:layout_marginBottom="284dp"
+            android:layout_marginBottom="260dp"
             android:text="@string/result_text_view"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textStyle="bold"
