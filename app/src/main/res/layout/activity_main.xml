@@ -7,7 +7,39 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-    <!-- TO DO -->
+    <EditText
+            android:id="@+id/operand_one_edit_text"
+            android:hint="@+id/operand_one_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="numberDecimal|numberSigned"
+            android:digits="@string/allowed_digits"
+            android:text="@string/type_operand_one_hint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+            android:id="@+id/operand_two_edit_text"
+            android:hint="@+id/operand_two_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="numberDecimal|numberSigned"
+            android:digits="@string/allowed_digits"
+            android:text="@string/type_operand_two_hint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/operand_one_edit_text"/>
 
     <Button
             android:id="@+id/button_add"
