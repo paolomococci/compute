@@ -1,11 +1,12 @@
 <resources>
     <string name="app_name">Compute</string>
-    <string name="type_operand_one_hint"></string>
-    <string name="type_operand_two_hint"></string>
+    <string name="type_operand_one_hint">0</string>
+    <string name="type_operand_two_hint">0</string>
     <string name="add_operation_text">Add</string>
     <string name="sub_operation_text">Sub</string>
     <string name="div_operation_text">Div</string>
     <string name="mul_operation_text">Mul</string>
     <string name="computation_error">Error</string>
     <string name="result_text_view"></string>
+    <string name="allowed_digits">0123456789.-</string>
 </resources>
