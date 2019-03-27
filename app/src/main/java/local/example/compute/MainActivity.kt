@@ -18,13 +18,14 @@
 
 package local.example.compute
 
-import androidx.appcompat.app.AppCompatActivity
-
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.EditText
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import local.example.compute.R.id.*
+import local.example.compute.R.layout.activity_main
 
 class MainActivity : AppCompatActivity() {
     private var compute: Compute? = null
@@ -34,10 +35,11 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(activity_main)
         compute = Compute()
-        resultView = findViewById(R.id.operation_result_text_view)
-        // TODO
+        resultView = findViewById(operation_result_text_view)
+        operandOne = findViewById(operand_one_edit_text)
+        operandTwo = findViewById(operand_two_edit_text)
     }
 
     fun onAdd(view: View) {
