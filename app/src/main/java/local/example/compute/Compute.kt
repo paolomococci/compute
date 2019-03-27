@@ -18,6 +18,9 @@
 
 package local.example.compute
 
+import java.math.BigDecimal
+import java.math.RoundingMode
+
 class Compute {
 
     enum class Operator {
@@ -25,11 +28,11 @@ class Compute {
     }
 
     fun add(firstOperand: Double, secondOperand: Double): Double {
-        return firstOperand + secondOperand
+        return round(firstOperand + secondOperand)
     }
 
     fun sub(firstOperand: Double, secondOperand: Double): Double {
-        return firstOperand - secondOperand
+        return round(firstOperand - secondOperand)
     }
 
     fun div(firstOperand: Double, secondOperand: Double): Double {
@@ -37,10 +40,15 @@ class Compute {
         quotient = firstOperand / secondOperand
         return if (java.lang.Double.isInfinite(quotient) || java.lang.Double.isNaN(quotient)) {
             java.lang.Double.NaN
-        } else quotient
+        } else round(quotient)
     }
 
     fun mul(firstOperand: Double, secondOperand: Double): Double {
-        return firstOperand * secondOperand
+        return round(firstOperand * secondOperand)
+    }
+
+    private fun round(num: Double): Double {
+        val temp = BigDecimal(num)
+        return temp.setScale(6, RoundingMode.HALF_UP).toDouble()
     }
 }
