@@ -37,9 +37,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(activity_main)
         compute = Compute()
-        resultView = findViewById(operation_result_text_view)
-        operandOne = findViewById(operand_one_edit_text)
-        operandTwo = findViewById(operand_two_edit_text)
+        resultView = findViewById(operation_result)
+        operandOne = findViewById(operand_one)
+        operandTwo = findViewById(operand_two)
     }
 
     fun onAdd(view: View) {
