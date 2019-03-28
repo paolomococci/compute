@@ -7,7 +7,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "local.example.wildflower"
+        applicationId "local.example.compute"
         minSdkVersion 26
         targetSdkVersion 28
         versionCode 1
