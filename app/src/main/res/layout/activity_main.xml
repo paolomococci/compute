@@ -53,7 +53,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.33"/>
+            app:layout_constraintVertical_bias="0.05"/>
 
     <Button
             android:id="@+id/button_sub"
@@ -92,7 +92,7 @@
             android:id="@+id/operation_result"
             android:layout_width="280dp"
             android:layout_height="60dp"
-            android:layout_marginBottom="260dp"
+            android:layout_marginBottom="280dp"
             android:text="@string/result_view"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textStyle="bold"
